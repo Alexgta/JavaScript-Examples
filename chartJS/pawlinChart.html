@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistics</title>
+
+    <link type="text/css" rel="stylesheet" href="./css/pawlin.css">
+    <script type="text/javascript" src="./js/Chart.min.js"></script>
+    <script type="text/javascript" src="./js/utils.js"></script>
+    <script type="text/javascript" src="./js/utils_simple.js"></script>
+
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+<div class="wrapper">
+    <div class="container">
+        <div class="menu_top">
+            <header>
+                <br><br>
+                <div class="col-sm-12">
+                    <img src="./icons/header02.png" alt="Pawlin Technologies" style="width:100%;height:100%">
+                </div>
+            </header>
+        </div>
+
+        <div class="left_col">
+            <img src="./icons/box.png"><br><br>
+
+            <table id="box_table" class="box_table" align="center">
+                <tr id="box01" onclick="selectBox('box01')" align="left" class="selected_row">
+                    <td>Camera 01 Is a pseudo-Latin text</td>
+                </tr>
+                <tr id="box02" onclick="selectBox('box02')" align="left">
+                    <td>Camera 02. Design elements over content.</td>
+                </tr>
+                <tr id="box03" onclick="selectBox('box03')" align="left">
+                    <td>Camera 03. Placeholder (or filler) text.</td>
+                </tr>
+                <tr id="box04" onclick="selectBox('box04')" align="left">
+                    <td>Camera 04. It's a convenient tool for mock-ups. It helps to outline the visual.</td>
+                </tr>
+                <tr id="box05" onclick="selectBox('box05')" align="left">
+                    <td>Camera 05. Lorem ipsum is mostly a part.</td>
+                </tr>
+                <tr id="box06" onclick="selectBox('box06')" align="left">
+                    <td>Camera 06. Of a Latin text by the classical author and philosopher Cicero.</td>
+                </tr>
+                <tr id="box07" onclick="selectBox('box07')" align="left">
+                    <td>Camera 07. By addition or removal, so to deliberately rende.</td>
+                </tr>
+                <tr id="box08" onclick="selectBox('box08')" align="left">
+                    <td>Camera 08. Text doesn't contain the letters K, W, or Z.</td>
+                </tr>
+                <tr id="box09" onclick="selectBox('box09')" align="left">
+                    <td>Camera 09. In a professional context it.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="right_col">
+            <div class="area_top">
+                <div class="left_graph_col" style="width:40%;">
+                    <div class="box_name">
+                        <p id="box_name_id">Box_name</p>
+                    </div><br>
+
+                    <div class="move_right">
+
+                        Date from:
+                        <input type="text" id="dateStart" name="dateStart" maxlength="11" size="11" value="01-Jan-2019"
+                                onchange="reLoadGraph()">(DD-Mon-YYYY)<br>
+
+                        Date to:
+                        <input type="text" id="dateEnd" name="dateEnd" maxlength="8" size="8" value="31-Dec-2019"
+                                onchange="reLoadGraph()">(DD-Mon-YYYY)<br><br>
+
+                        Детализация графиков
+                        <select id="GroupByType" name="GroupByType" onchange="reLoadGraph()">
+                            <option value="H">Hour</option>
+                            <option value="w">Day of the week</option>
+                            <option value="d">Day of the month</option>
+                            <option value="m">Month</option>
+                            <option value="quarter">Quarter</option>
+                            <option value="Y">Year</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="right_graph_col" style="width:40%;">
+                    <canvas id="chart-area2"></canvas>
+                </div>
+            </div>
+
+            <div class="area_bottom">
+                <div class="left_graph_col" style="width:40%;">
+                    <canvas id="canvas"></canvas>
+                </div>
+                <div class="right_graph_col" style="width:40%;">
+                    <canvas id="chart-area3"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

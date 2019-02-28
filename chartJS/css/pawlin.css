@@ -1,0 +1,143 @@
+
+.wrapper {
+    /*border: 1px dashed blue;*/
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.container {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 99%;
+    /*border: 2px solid black;*/
+    /*border-radius: 20px;*/
+    height: calc(100% - 8px);
+    left: 0;
+    top: 0;
+}
+
+.left_col {
+    /*width: 300px;  or 19%*/
+    margin-top: 20px;
+    width: 29%;
+    /*min-height: 200px;*/
+    /*background: rgb(196, 253, 255);*/
+    /*border-right: 1px solid black;*/
+    float: left;
+    text-align: center;
+    color: #678;
+}
+
+.right_col {
+    max-width: 90%;
+    min-height: 150px;
+    /*background: rgb(246, 250, 185);*/
+    /*margin-left: 300px;*/
+    margin-left: 30%;
+    height: calc(100% - 60px);
+    left: 0;
+    top: 0;
+    color: #678;
+}
+
+.left_graph_col {
+    /*background: rgb(241, 236, 250);*/
+    float: left;
+    margin-left: 0px;
+    min-width: 50%;
+    left: 0;
+    top: 0;
+    color: #678;
+    /*color: #000000;*/
+}
+
+.right_graph_col {
+    /*background: rgb(250, 227, 226);*/
+    float: right;
+    margin-left: 0px;
+    left: 0;
+    top: 0;
+}
+
+.move_right {
+    margin-left: 12%;
+}
+
+.menu_top {
+    /*height: 80px;*/
+    /*border-bottom: 1px solid black;*/
+}
+
+.area_top {
+    /*border-left: 1px solid black;*/
+    min-height: 40%;
+}
+
+.area_bottom {
+    /*border-left: 1px solid black;*/
+    /*background: rgb(205, 250, 207);*/
+}
+
+.avc_footer {
+    clear: left;
+    /*background: rgb(224, 224, 224);*/
+    /*border-top: 1px solid black;*/
+    height: 60px;
+    collor: #ff0000;
+}
+
+.right {
+    margin: 20px;
+    float: right;
+}
+
+.left {
+    margin: 20px;
+    float: left;
+}
+
+input, select, textarea, option {
+    color: #678;
+}
+
+.column_normal {
+    color: lightgray;
+}
+
+.column_highlighted {
+    color: gray;
+}
+
+
+tr {
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+
+td {
+    align: "center";
+}
+
+DIV.box_name {
+    text-align: center;
+    font-size: x-large;
+}
+
+.box_name {
+    color: #678;
+}
+
+.box_table {
+    font-size: large;
+    border-spacing: 12px;
+}
+
+.selected_row {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
