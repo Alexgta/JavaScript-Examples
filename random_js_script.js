@@ -301,7 +301,7 @@ function startProgress(timeProgressStr, start)
                 }
              }
 
-          	$('#progress').text("Расчет выполнен");
+          	$('#progress').text("Calculation done");
           	stopProgress();
           }
        }
@@ -629,31 +629,7 @@ window.chartColors = {
 	grey: 'rgb(201, 203, 207)'
 };
 
-/*function drawChart()
-{
-	var chartEl = document.getElementById("chart");
-	
-	if (pawlinChart != null)
-		   pawlinChart.destroy();
-	
-	pawlinChart = new Chart(chartEl, {
-		type: 'scatter',
-		data: lineChartData,
-		options: {
-		responsive: true,
 
-			tooltips: {
-				enabled: true,
-				position: 'average',
-				intersect: false
-				
-			},
-			legend: {
-				position: 'bottom'
-			}
-		}
-	});
-}*/
 function drawChart()
 {
 	debugger;
@@ -734,7 +710,6 @@ function drawTitle()
 			//alert("drawTitle : params = '" + response + "'");
         }
     });
-   // alert('drawTitle');
 }
 
 
@@ -808,7 +783,7 @@ function openTabPmaResult()   // Open the bookmark with codes
    });
 }
 
-function showTrendResult(trendReCalculate, trendOrderBy)   // Открыываем закладку с кодамм. reCalculate='yes' - пересчет модели / 'no' - нет
+function showTrendResult(trendReCalculate, trendOrderBy)   // Open page with code. reCalculate='yes' - re-calculat / 'no' - no
 {
    changeStartTime();
    //if (trendReCalculate == 'yes') {
